@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: product
+server:
+  port: 8081
+eureka:
+  client:
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
