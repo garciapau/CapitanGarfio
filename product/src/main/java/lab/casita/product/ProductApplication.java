@@ -30,8 +30,10 @@ public class ProductApplication {
     @RequestMapping(value = "/products", method = RequestMethod.GET)
     @Produces(MediaType.APPLICATION_JSON_VALUE)
     @Consumes(MediaType.APPLICATION_JSON_VALUE)
-    public String products() {
-        return "{ 'message': 'Hola pitufa'}";
+    public Map<String, Object> products() {
+        Map<String, Object> response = new HashMap<>();
+        response.put("prod1", "Product 1");
+        return response;
     }
 
     @RequestMapping(value="/governance", method = RequestMethod.GET)
