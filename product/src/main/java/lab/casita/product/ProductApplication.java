@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.Produces;
+import java.util.HashMap;
+import java.util.Map;
 
 @Configuration
 @EnableAutoConfiguration
@@ -35,7 +37,10 @@ public class ProductApplication {
     @RequestMapping(value="/governance", method = RequestMethod.GET)
     @Produces(MediaType.APPLICATION_JSON_VALUE)
     @Consumes(MediaType.APPLICATION_JSON_VALUE)
-    public String getGovernance() {
-        return "{ \"usedBy\": \"shop\"}";
+    public Map<String, Object> getGovernance() {
+        Map<String, Object> response = new HashMap<>();
+
+        response.put("usedBy", "shop");
+	    return response;
     }
 }

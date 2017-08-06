@@ -5,6 +5,6 @@ server:
   port: 8090
 eureka:
   client:
-    registerWithEureka: false
+    registerWithEureka: true
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}

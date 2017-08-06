@@ -36,6 +36,7 @@ import static org.apache.http.HttpHeaders.USER_AGENT;
 @RestController
 public class GovernatorApplication {
 
+    private static final String GOVERNATOR = "GOVERNATOR";
     //	private EurekaClient eurekaClient;
     @Autowired
     private DiscoveryClient discoveryClient;
@@ -54,7 +55,7 @@ public class GovernatorApplication {
         List<String> ll = discoveryClient.getServices();
 
         discoveryClient.getServices()
-                .stream().map(s -> discoveryClient.getInstances(s)
+                .stream().filter(s -> !s.equalsIgnoreCase(GOVERNATOR)).map(s -> discoveryClient.getInstances(s)
                 .stream().findFirst().get())
                 .forEach(s -> resp.put(s.getServiceId(), sendGet(buildUrl(s))));
         return resp;
