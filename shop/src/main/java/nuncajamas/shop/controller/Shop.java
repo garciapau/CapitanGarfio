@@ -1,47 +1,28 @@
-package lab.casita.product;
+package nuncajamas.shop.controller;
 
+import nuncajamas.shop.client.product.ProductClient;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.http.MediaType;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.ws.rs.Consumes;
-import javax.ws.rs.Produces;
 import java.util.HashMap;
 import java.util.Map;
 
-@SpringBootApplication
-@EnableEurekaClient
-@EnableFeignClients
-//@Controller
 @RestController
-public class ShopApplication {
+public class Shop {
 
 	@Autowired
 	private ProductClient productClient;
 
-	public static void main(String[] args) {
-		SpringApplication.run(ShopApplication.class, args);
-	}
-
-	@RequestMapping(value="/getProducts", method = RequestMethod.GET)
-    @Produces(MediaType.APPLICATION_JSON_VALUE)
-    @Consumes(MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value="/getProducts", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public String getProducts(Model model) {
-//		model.addAttribute("products", productClient.products());
 		return productClient.products();
 	}
 
-	@RequestMapping(value="/governance", method = RequestMethod.GET)
-    @Produces(MediaType.APPLICATION_JSON_VALUE)
-    @Consumes(MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value="/governance", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public Map<String, Object> getGovernance() {
 	    /*
             { "info":{

@@ -4,30 +4,24 @@ import nuncajamas.util.util.HttpUtil;
 import nuncajamas.util.util.UrlUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.ws.rs.Produces;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-@EnableEurekaClient
 @RestController
-
 public class Governator {
 
     private static final String GOVERNATOR = "GOVERNATOR";
     @Autowired
     private DiscoveryClient discoveryClient;
 
-    @RequestMapping(value = "/governance", method = RequestMethod.GET)
-    @Produces(MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/governance", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public Map<String, Object> governance() {
 
         Map<String, Object> catalog = new HashMap<>();
