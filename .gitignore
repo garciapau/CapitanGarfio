@@ -1,16 +1,18 @@
 # Created by .ignore support plugin (hsz.mobi)
+
+### Gradle template
+.gradle
+build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
 ### Java template
 # Compiled class file
 *.class
 
 # Log file
 *.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
 
 # Package Files #
 *.jar
@@ -25,3 +27,10 @@ hs_err_pid*
 
 .gitignore
 .idea/workspace.xml
+
+.idea
+*.iml
+
+# Jenv
+.version
+.java-version
