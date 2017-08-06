@@ -38,8 +38,9 @@ public class Governator {
                         .filter(s -> !s.equalsIgnoreCase(GOVERNATOR))
                         .map(s -> discoveryClient.getInstances(s)
                             .stream().findAny().get())
-                    .collect(Collectors.toMap(o -> o.getServiceId(), t -> HttpUtil.sendGet(UrlUtil.buildGovernanceUrl(t))))
-        );
+//                    .collect(Collectors.toMap(o -> o.getServiceId(), t -> HttpUtil.sendGet(UrlUtil.buildGovernanceUrl(t))))
+                    .map(serviceInstance -> HttpUtil.sendGet(UrlUtil.buildGovernanceUrl(serviceInstance)))
+                    .collect(Collectors.toList()));
         return catalog;
     }
 
