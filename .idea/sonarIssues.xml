@@ -23,6 +23,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/governator/src/main/java/nuncajamas/governator/controller/Governator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/governator/src/main/resources/application.yml">
           <value>
             <set />
@@ -38,7 +43,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/product/src/main/java/nuncajamas/product/controller/Product.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/shop/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/shop/src/main/java/nuncajamas/shop/controller/Shop.java">
           <value>
             <set />
           </value>

@@ -21,37 +21,38 @@ public class Product {
     @RequestMapping(value="/governance", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public Map<String, Object> getGovernance() {
 	    /*
-            { "info":{
+        {
+            "identifier":{
               "serviceId": "pepe",
               "version": "1.0"
-              },
-              "consumes":[
-                  {"type": "service",
-                   "channel": "API",
-                   "id":"pepa",
-                   "version": "1.0"},
-                  {"type": "resource",
-                   "channel": "TOPIC",
-                  "id": "topic.anna",
-                  "version": "1.0"}
-              ],
-               "produces":[
-                  {"type":"resource",
-                  "channel": "TOPIC",
-                  "id": "topic.pau",
-                  "version": "1.0"},
-                  {"channel": "API",
-                   "type": "service",
-                  "id":"pepa",
-                  "version": "1.0"}
-              ]
-            }
+            },
+            "consumes":[
+              {"type": "service",
+                "channel": "API",
+                "id":"pepa",
+                "version": "1.0"},
+              {"type": "resource",
+                "channel": "TOPIC",
+                "id": "topic.anna",
+                "version": "1.0"}
+            ],
+            "produces":[
+              {"type":"resource",
+                "channel": "TOPIC",
+                "id": "topic.pau",
+                "version": "1.0"},
+              {"channel": "API",
+                "type": "service",
+                "id":"pepa",
+                "version": "1.0"}
+            ]
+          }
 	     */
         Map<String, Object> response = new HashMap<>();
-        Map<String, Object> info = new HashMap<>();
-        info.put("serviceId", "product");
-        info.put("version", "1.0.0");
-        response.put("info", info);
+        Map<String, Object> identifier = new HashMap<>();
+        identifier.put("serviceId", "product");
+        identifier.put("version", "1.0.0");
+        response.put("identifier", identifier);
 
         Map<String, Object> consumes = new HashMap<>();
         consumes.put("type", "resource");
