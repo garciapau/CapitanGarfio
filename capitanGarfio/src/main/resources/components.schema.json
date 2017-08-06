@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "description": "",
+  "id": "http://schema.capitanGarfio.io/schema/Common-Definitions.json/1.json#",
+  "properties": {
+    "collector": {
+      "id": "/properties/collector",
+      "properties": {
+        "id": {
+          "id": "/properties/collector/properties/id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "type": "object"
+    },
+    "components": {
+      "id": "/properties/components",
+      "items": {
+        "id": "/properties/components/items",
+        "properties": {
+          "consumes": {
+            "id": "/properties/components/items/properties/consumes",
+            "items": {
+              "id": "/properties/components/items/properties/consumes/items",
+              "properties": {
+                "channel": {
+                  "id": "/properties/components/items/properties/consumes/items/properties/channel",
+                  "type": "string"
+                },
+                "id": {
+                  "id": "/properties/components/items/properties/consumes/items/properties/id",
+                  "type": "string"
+                },
+                "type": {
+                  "id": "/properties/components/items/properties/consumes/items/properties/type",
+                  "type": "string"
+                },
+                "version": {
+                  "id": "/properties/components/items/properties/consumes/items/properties/version",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type",
+                "id",
+                "channel"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "identifier": {
+            "id": "/properties/components/items/properties/identifier",
+            "properties": {
+              "serviceId": {
+                "id": "/properties/components/items/properties/identifier/properties/serviceId",
+                "type": "string"
+              },
+              "version": {
+                "id": "/properties/components/items/properties/identifier/properties/version",
+                "type": "string"
+              }
+            },
+            "required": [
+              "serviceId"
+            ],
+            "type": "object"
+          },
+          "produces": {
+            "id": "/properties/components/items/properties/produces",
+            "items": {
+              "id": "/properties/components/items/properties/produces/items",
+              "properties": {
+                "channel": {
+                  "id": "/properties/components/items/properties/produces/items/properties/channel",
+                  "type": "string"
+                },
+                "id": {
+                  "id": "/properties/components/items/properties/produces/items/properties/id",
+                  "type": "string"
+                },
+                "type": {
+                  "id": "/properties/components/items/properties/produces/items/properties/type",
+                  "type": "string"
+                },
+                "version": {
+                  "id": "/properties/components/items/properties/produces/items/properties/version",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "identifier"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "collector",
+    "components"
+  ],
+  "type": "object"
+}
+

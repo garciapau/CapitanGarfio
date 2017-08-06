@@ -1,0 +1,31 @@
+{
+  "collector":{
+    "id":"governator"
+  },
+  "components":[{
+    "identifier":{
+      "serviceId": "pepe",
+      "version": "1.0"
+    },
+    "consumes":[
+      {"type": "service",
+        "channel": "API",
+        "id":"pepa",
+        "version": "1.0"},
+      {"type": "resource",
+        "channel": "TOPIC",
+        "id": "topic.anna",
+        "version": "1.0"}
+    ],
+    "produces":[
+      {"type":"resource",
+        "channel": "TOPIC",
+        "id": "topic.pau",
+        "version": "1.0"},
+      {"channel": "API",
+        "type": "service",
+        "id":"pepa",
+        "version": "1.0"}
+    ]
+  }]
+}
