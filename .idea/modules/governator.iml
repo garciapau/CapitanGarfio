@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="governator" external.linked.project.path="$MODULE_DIR$/../../governator" external.root.project.path="$MODULE_DIR$/../../governator" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="0.0.1-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../governator">
+      <excludeFolder url="file://$MODULE_DIR$/../../governator/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../governator/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="sonarModuleSettings">
+    <option name="localAnalysisScripName" value="&lt;PROJECT&gt;" />
+    <option name="serverName" value="&lt;PROJECT&gt;" />
+  </component>
+</module>

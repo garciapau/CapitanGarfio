@@ -3,6 +3,18 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CapitanGarfio.iml" filepath="$PROJECT_DIR$/CapitanGarfio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-server.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-server_main.iml" group="eureka-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-server_test.iml" group="eureka-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/governator.iml" filepath="$PROJECT_DIR$/.idea/modules/governator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/governator_main.iml" filepath="$PROJECT_DIR$/.idea/modules/governator_main.iml" group="governator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/governator_test.iml" filepath="$PROJECT_DIR$/.idea/modules/governator_test.iml" group="governator" />
+      <module fileurl="file://$PROJECT_DIR$/product/product.iml" filepath="$PROJECT_DIR$/product/product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/product_main.iml" filepath="$PROJECT_DIR$/.idea/modules/product_main.iml" group="product" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/product_test.iml" filepath="$PROJECT_DIR$/.idea/modules/product_test.iml" group="product" />
+      <module fileurl="file://$PROJECT_DIR$/shop/shop.iml" filepath="$PROJECT_DIR$/shop/shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shop_main.iml" filepath="$PROJECT_DIR$/.idea/modules/shop_main.iml" group="shop" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shop_test.iml" filepath="$PROJECT_DIR$/.idea/modules/shop_test.iml" group="shop" />
     </modules>
   </component>
 </project>
