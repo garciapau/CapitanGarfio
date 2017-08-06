@@ -1,4 +1,4 @@
-package lab.casita.product;
+package nuncajamas.shop.client.product;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
